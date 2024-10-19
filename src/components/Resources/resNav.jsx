@@ -22,7 +22,7 @@ const Navbar = () => {
     >
       <div className="nav-con"></div>
       <div>
-        <a href="/" className="nav-link">Get Started</a>
+        <a href="/" className="nav-link">Home</a>
         <a href="/about" className="nav-link">About</a>
       </div>
     </motion.div>
