@@ -12,8 +12,16 @@ const ResourcesPage = () => {
       practice: "Read articles and watch videos about the internet.",
       resources: [
         {
-          title: "What is the Internet? (YouTube)",
-          link: "https://www.youtube.com/watch?v=OAx_6-wdslM",
+          title: "What is World Wide Web (WWW)? (Article)",
+          link: "https://www.geeksforgeeks.org/world-wide-web-www/",
+        },
+        {
+          title: "What is Internet?(Article)",
+          link: "https://www.geeksforgeeks.org/what-is-internet-definition-uses-working-advantages-and-disadvantages/",
+        },
+        {
+          title: "How internet works? (YouTube)",
+          link: "https://youtu.be/x3c1ih2NJEg?si=LkjH81ej7ogNrxZ6",
         },
       ],
     },
@@ -27,6 +35,10 @@ const ResourcesPage = () => {
         {
           title: "HTML Basics (MDN)",
           link: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics",
+        },
+        {
+          title: "Basic HTML Course (Youtube)",
+          link: "https://www.youtube.com/watch?v=4dprtEzunIk&list=PLbtI3_MArDOkNtOan8BQkG6P8wf6pNVz-",
         },
         {
           title: "HTML Course (freeCodeCamp)",
@@ -46,6 +58,10 @@ const ResourcesPage = () => {
           link: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics",
         },
         {
+          title: "CSS Basics (Youtube)",
+          link: "https://www.youtube.com/watch?v=K1naz9wBwKU&list=PLbtI3_MArDOkNtOan8BQkG6P8wf6pNVz-&index=2",
+        },
+        {
           title: "CSS Course (freeCodeCamp)",
           link: "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/",
         },
@@ -63,6 +79,10 @@ const ResourcesPage = () => {
           link: "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Responsive_design",
         },
         {
+          title: "Responsive Web development(Youtube)",
+          link: "https://youtu.be/HG10yrq1pbk?si=jXW3FLjtOsXvQPXj",
+        },
+        {
           title: "Responsive Design Course (freeCodeCamp)",
           link: "https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-principles/",
         },
@@ -70,6 +90,27 @@ const ResourcesPage = () => {
     },
     {
       step: 5,
+      title: "Projects with HTML and CSS",
+      duration: "2 weeks",
+      goal: "Develop practical skills in HTML and CSS by creating responsive and visually appealing web projects.",
+      practice: "Build projects like a personal portfolio, a responsive landing pages",
+      resources: [
+        {
+          title: "Landing Page with HTML and CSS",
+          link: "https://www.youtube.com/watch?v=3fxxRHV8Jfk&list=PLbtI3_MArDOnscF-pLyW8QU9oDIXBPnLo",
+        },
+        {
+          title: "Advance Landing Page with HTML and CSS",
+          link: "https://www.youtube.com/watch?v=0kWMHEOwbis",
+        },
+        {
+          title: "Build Your Personal Portfolio Website with HTML & CSS",
+          link: "https://youtube.com/playlist?list=PLXQpH_kZIxTWgPEnocGfpQo4XLrgcx63M&si=TraCvbtzTUx16qyb",
+        },
+      ],
+    },
+    {
+      step: 6,
       title: "Learn JavaScript",
       duration: "4 weeks",
       goal: "Add interactivity to your web pages.",
@@ -80,13 +121,17 @@ const ResourcesPage = () => {
           link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps",
         },
         {
+          title: "JavaScript From Basics(Youtube)",
+          link: "https://youtube.com/playlist?list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&si=UFkgGBr0UNmgulNj",
+        },
+        {
           title: "JavaScript Course (freeCodeCamp)",
           link: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/",
         },
       ],
     },
     {
-      step: 6,
+      step: 7,
       title: "DOM Manipulation",
       duration: "2 weeks",
       goal: "Learn how to manipulate the Document Object Model (DOM).",
@@ -99,7 +144,7 @@ const ResourcesPage = () => {
       ],
     },
     {
-      step: 7,
+      step: 8,
       title: "Version Control with Git",
       duration: "2 weeks",
       goal: "Learn how to manage code versions using Git.",
@@ -112,7 +157,7 @@ const ResourcesPage = () => {
       ],
     },
     {
-      step: 8,
+      step: 9,
       title: "Basic Project",
       duration: "4 weeks",
       goal: "Build a simple personal portfolio website.",
@@ -121,19 +166,6 @@ const ResourcesPage = () => {
         {
           title: "Portfolio Website Tutorial (Traversy Media)",
           link: "https://www.youtube.com/watch?v=i4Zt5BaNVdA",
-        },
-      ],
-    },
-    {
-      step: 9,
-      title: "Advanced JavaScript",
-      duration: "2 weeks",
-      goal: "Understand more complex JavaScript concepts.",
-      practice: "Solve coding challenges.",
-      resources: [
-        {
-          title: "Advanced JavaScript Concepts (Udemy)",
-          link: "https://www.udemy.com/course/advanced-javascript-concepts/",
         },
       ],
     },

@@ -12,9 +12,9 @@ const App = () => {
       <SmoothScroll />
       <Mouse />
       <Navbar />
-      {/* <Begginer /> */}
+      <Begginer />
       {/* <Intermediate /> */}
-      <Advance />
+      {/* <Advance /> */}
       <Footer />
     </div>
   );
