@@ -2,21 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Arial', sans-serif; /* Change to a single font for consistency */
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: #000110; /* Retaining the original background */
 }
+
 body::-webkit-scrollbar {
-    display: none;
-  }
-#nav {
-  font-family: monument, sans-serif;
-  background-color: #80808047;
+  display: none;
+}
+
+#res-nav {
+  background-color: rgba(128, 128, 128, 0.3); /* Lighter background for the navbar */
   letter-spacing: 2px;
   height: 10vh;
   display: flex;
@@ -25,14 +26,14 @@ body::-webkit-scrollbar {
   padding: 0 5vw;
 }
 
-#nav div {
+#res-nav div {
   padding: 1.5vw;
   text-transform: uppercase;
   font-size: 1.2vw;
   position: relative;
 }
 
-.nav-con {
+.res-nav-con {
   background-image: url(/public/favImg.png);
   background-size: cover;
   background-position: center;
@@ -42,53 +43,54 @@ body::-webkit-scrollbar {
   margin-left: 50px;
 }
 
-#nav div:last-child {
+#res-nav div:last-child {
   display: flex;
   gap: 4vw;
 }
 
-#nav a {
+#res-nav a {
   text-transform: uppercase;
   font-size: 1.2vw;
-  color: white;
+  color: #d4af37; /* Updated to gold */
   text-decoration: none;
   padding: 10px 15px;
   transition: color 0.3s, background-color 0.3s;
 }
 
-
-#nav a:hover {
-  color: #ffffffa2;
+#res-nav a:hover {
+  color: #f5d065; /* Slightly lighter gold on hover */
+  text-shadow: 0 0 5px #d4af37; /* Adding a glow effect on hover */
 }
 
 .res-guide {
   height: 100%;
   width: 100%;
-  background-color: #090909a8;
+  background-color: rgba(9, 9, 9, 0.65); /* More translucent for a layered look */
   padding: 4vw;
   color: #fff;
 }
+
 .instructions {
   border-radius: 10px;
   padding: 2vw;
   margin: 1vw;
-  /* background-color: #00fffb; */
-  background-color: #272727;
+  background-color: rgba(39, 39, 39, 0.85); /* Slightly darker for contrast */
 }
+
 .instructions h2 {
   font-size: 2vw;
   margin-bottom: 2vw;
+  color: #d4af37; /* Updated to gold */
 }
+
 .instructions ol li {
   margin: 1vw;
-  /* width: 70%; */
-  /* background-color: #00fffb; */
 }
+
 #resources-page {
-  background-color: black;
+  background-color: #000110; /* Retaining the original background */
   width: 100%;
   height: 100%;
-  font-family: "Arial", sans-serif;
   color: #fff;
   margin-bottom: 5vw;
 }
@@ -96,55 +98,55 @@ body::-webkit-scrollbar {
 #res-title {
   width: 70%;
   position: relative;
-  padding: 2vw 2vw;
-  left: 30%;
+  padding: 2vw;
+  left: 30%; 
 }
 
 #res-title h1 {
   font-size: 4vw;
+  color: #d4af37; /* Updated to gold */
 }
 
 .underline-res {
   margin-top: 2vw;
   height: 0.3vw;
-  background-color: #fff;
+  background-color: #ffff; /* Underline matching new palette */
 }
+
 #res-card {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+
 .roadmap-step {
-  height: 100%;
   width: 40vw;
-  /* background-color: red; */
   margin: 1vw;
   padding: 2vw 3vw;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Lighter border for better visibility */
   border-radius: 1vw;
-  background-color: #80808074;
+  background-color: rgba(128, 128, 128, 0.5); /* Improved background */
 }
 
 .roadmap-step h2 {
   font-size: 2vw;
   margin: 1vw 0;
+  color: #fff; /* White color for better contrast */
 }
 
-.duration {
-  margin: 1vw 0;
-  font-size: 1.3vw;
-}
-
+.duration,
 .goal,
 .practice {
   margin: 1vw 0;
   font-size: 1.2vw;
+  color: #ddd; /* Soft gray for better readability */
 }
 
 .roadmap-step h3 {
   font-size: 1.5vw;
   margin: 1vw 0;
+  color: #d4af37; /* Updated to gold */
 }
 
 .roadmap-step ul {
@@ -152,11 +154,12 @@ body::-webkit-scrollbar {
 }
 
 .roadmap-step ul li a {
-  color: #00fffb;
+  color: #d4af37; /* Updated to gold */
   text-decoration: none;
   font-size: 1.4vw;
 }
 
 .roadmap-step ul li a:hover {
   text-decoration: underline;
+  text-shadow: 0 0 5px #d4af37; /* Glow effect on hover */
 }

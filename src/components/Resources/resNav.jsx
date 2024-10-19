@@ -15,15 +15,15 @@ const Navbar = () => {
 
   return (
     <motion.div 
-      id="nav"
+      id="res-nav"
       initial="hidden" // Set initial state
       animate="visible" // Animate to the visible state
       variants={navVariants} // Apply the defined variants
     >
-      <div className="nav-con"></div>
+      <div className="res-nav-con"></div>
       <div>
-        <a href="/" className="nav-link">Home</a>
-        <a href="/about" className="nav-link">About</a>
+        <a href="/" className="res-nav-link">Home</a>
+        <a href="/about" className="res-nav-link">About</a>
       </div>
     </motion.div>
   );

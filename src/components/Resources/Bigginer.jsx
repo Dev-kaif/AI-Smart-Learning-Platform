@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { delay, motion, useScroll, useTransform } from "framer-motion";
 import "./Rstyle.css";
 
 const ResourcesPage = () => {
@@ -93,7 +93,8 @@ const ResourcesPage = () => {
       title: "Projects with HTML and CSS",
       duration: "2 weeks",
       goal: "Develop practical skills in HTML and CSS by creating responsive and visually appealing web projects.",
-      practice: "Build projects like a personal portfolio, a responsive landing pages",
+      practice:
+        "Build projects like a personal portfolio, a responsive landing pages",
       resources: [
         {
           title: "Landing Page with HTML and CSS",
@@ -216,20 +217,27 @@ const ResourcesPage = () => {
 
   const { scrollY } = useScroll();
   const res1 = {
-    hidden: { opacity: 0}, // Initial state (invisible and slightly moved up)
-    visible: { 
+    hidden: { opacity: 0 }, // Initial state (invisible and slightly moved up)
+    visible: {
       opacity: 1, // Fully visible
-      transition: { duration: 1, ease: "easeInOut" } // Animation details
+      transition: { duration: 1, ease: "easeInOut" }, // Animation details
     },
   };
-  
+  // Underline animation when the section is visible
+  const underlineVariants = {
+    hidden: { width: "0" }, // Initial width of 0
+    visible: {
+      width: "100%", // Expanding width to 50vw
+      transition: { delay:0.5,duration: 1, ease: "easeInOut" }, // Smooth easing
+    },
+  };
   return (
-    <motion.div 
-     id="res-page"
-     initial="hidden" 
-     animate="visible" 
-     variants={res1} 
-     >
+    <motion.div
+      id="res-page"
+      initial="hidden"
+      animate="visible"
+      variants={res1}
+    >
       <div className="res-guide">
         <section className="instructions">
           <h2>Instructions for Beginners</h2>
@@ -265,7 +273,13 @@ const ResourcesPage = () => {
       <div id="resources-page">
         <div id="res-title">
           <h1>Web Development Roadmap</h1>
-          <div className="underline-res"></div>
+          <motion.div
+          className="underline-res"
+          variants={underlineVariants} 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+        ></motion.div>
         </div>
         <div id="res-card">
           {roadmap.map((item, index) => {
