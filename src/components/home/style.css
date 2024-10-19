@@ -1,0 +1,10 @@
+.mouse-follower {
+  width: 1vw;
+  height: 1vw;
+  mix-blend-mode: difference;
+  background-color: #fff;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+}
