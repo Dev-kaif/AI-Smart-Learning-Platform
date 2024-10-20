@@ -1,12 +1,17 @@
+@font-face {
+  font-family: monument;
+  src: url(.../public/MonumentExtended-Regular.otf);
+  /* C:\Users\Kaifg\OneDrive\Desktop\res\public\MonumentExtended-Regular.otf */
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif; /* Change to a single font for consistency */
 }
 
 html,
 body {
+  font-family: 'Arial', sans-serif; /* Change to a single font for consistency */
   height: 100%;
   width: 100%;
   background-color: #000110; /* Retaining the original background */
@@ -103,7 +108,9 @@ body::-webkit-scrollbar {
 }
 
 #res-title h1 {
-  font-size: 4vw;
+  font-weight: 500;
+  font-family: 'monument';
+  font-size: 3.3vw;
   color: #d4af37; /* Updated to gold */
 }
 
@@ -130,7 +137,10 @@ body::-webkit-scrollbar {
 }
 
 .roadmap-step h2 {
-  font-size: 2vw;
+  font-family: 'monument';
+  font-weight: 400;
+  font-size: 1.5vw;
+  letter-spacing: 0.1vw;
   margin: 1vw 0;
   color: #fff; /* White color for better contrast */
 }
@@ -150,10 +160,11 @@ body::-webkit-scrollbar {
 }
 
 .roadmap-step ul {
-  list-style-type: none;
+  list-style-type:disc;
 }
 
 .roadmap-step ul li a {
+  line-height: 2.5vw;
   color: #d4af37; /* Updated to gold */
   text-decoration: none;
   font-size: 1.4vw;
