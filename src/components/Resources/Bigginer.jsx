@@ -286,12 +286,12 @@ const ResourcesPage = () => {
             const { scrollY } = useScroll();
             const y = useTransform(
               scrollY,
-              [index * 380, index * 380 + 380],
+              [index * 440, index * 440 + 440],
               [0.8, 1]
             ); // Adjust based on item index
             const opacity = useTransform(
               scrollY,
-              [index * 380, index * 380 + 380],
+              [index * 440, index * 440 + 440],
               [0, 1]
             );
 
