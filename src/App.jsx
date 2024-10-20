@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Navbar from "./components/Resources/resNav";
+import RNavbar from "./components/Resources/resNav";
 import Footer from "./components/footer/footer";
 import Mouse from "./components/home/mouse/mouse";
 import SmoothScroll from "./components/animation/smoothScroll";
@@ -11,7 +11,7 @@ const App = () => {
     <div>
       <SmoothScroll />
       <Mouse />
-      <Navbar />
+      <RNavbar/>
       <Begginer />
       {/* <Intermediate /> */}
       {/* <Advance /> */}
